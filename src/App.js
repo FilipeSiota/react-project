@@ -1,4 +1,6 @@
 import './App.css';
+// import NomeDaFuncao/Componente from 'source'
+import HelloWorld from './components/HelloWorld/HelloWorld'
 
 function App() { // main function
 
@@ -20,6 +22,7 @@ function App() { // main function
       <p>Soma: {2 + 2}</p>
       <p>Soma por função: {sum(2, 5)}</p>
       <img src={url} alt='Minha imagem' />
+      <HelloWorld />
     </div>
   );
 }
