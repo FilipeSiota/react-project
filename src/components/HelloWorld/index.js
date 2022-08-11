@@ -1,6 +1,6 @@
-import Frase from '../Frase/Frase'
+import { Frase } from '../Frase'
 
-function HelloWorld() {
+export const HelloWorld = () => {
 
     return (
         // Wrapper (obrigatório)
@@ -13,5 +13,3 @@ function HelloWorld() {
     )
 
 }
-
-export default HelloWorld

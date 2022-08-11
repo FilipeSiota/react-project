@@ -1,30 +1,25 @@
 import './App.css';
 // import NomeDaFuncao/Componente from 'source'
-import HelloWorld from './components/HelloWorld/HelloWorld'
+import { SayMyName } from './components/SayMyName'
+import { Pessoa } from './components/Pessoa'
 
-function App() { // main function
+export const App = () => { // main function
 
-  const name = 'Filipe'
-
-  const newName = name.toUpperCase()
-
-  function sum(a, b) {
-    return a + b
-  }
-
-  const url = 'https://via.placeholder.com/150'
+  const nome = 'Maria'
 
   return (
     // Classe = className
     <div className="App">
-      <h1>Alterando o JSX</h1>
-      <p>Olá, {newName}!</p>
-      <p>Soma: {2 + 2}</p>
-      <p>Soma por função: {sum(2, 5)}</p>
-      <img src={url} alt='Minha imagem' />
-      <HelloWorld />
+      <SayMyName name='Filipe' />
+      <SayMyName name='João' />
+      <SayMyName name={nome} />
+      
+      <Pessoa
+        photo='https://via.placeholder.com/150'
+        name='Filipe'
+        age='17'
+        occupation='Developer'
+      />
     </div>
   );
 }
-
-export default App;

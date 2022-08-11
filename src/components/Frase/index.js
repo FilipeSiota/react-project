@@ -1,4 +1,4 @@
-function Frase() {
+export const Frase = () => {
 
     return (
         <div>
@@ -7,5 +7,3 @@ function Frase() {
     )
 
 }
-
-export default Frase
